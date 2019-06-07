@@ -36,7 +36,7 @@
              
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-xml-plugin</artifactId>
+                        <artifactId>maven-war-plugin</artifactId>
                         <configuration>
                             <archive>
                                 <addMavenDescriptor>false</addMavenDescriptor>
