@@ -3,7 +3,7 @@
 <sute name="Suite">
   <test thread-count="5" name="Test">
      <classes>
-	   <class name="project.TestNG"/>
+	   <class name="TestNG.TestNG"/>
 	  </classes>
    </test>
 </suite>   
