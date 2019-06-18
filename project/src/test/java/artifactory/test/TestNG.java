@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestNG {
     public static void main(String[] args) {
-
+          @test
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://35.200.147.21:31000/project-1.0-RAMA/");
