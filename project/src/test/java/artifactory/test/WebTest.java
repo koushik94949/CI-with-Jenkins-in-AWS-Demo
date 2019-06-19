@@ -23,6 +23,6 @@ public class WebTest {
     @Test
     public void testLoginPage() {
         beginAt("index.html"); 
-        assertTitleEquals("Hello DevOps Engineers and Architects!");
+        assertTitleEquals("Welcome to Continous Integration with Jenkins in AWS Yottabyte session");
     }
 }
