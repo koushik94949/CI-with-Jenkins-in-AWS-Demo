@@ -24,6 +24,6 @@ public class WebTest {
     public void testLoginPage() {
         beginAt("index.html");
         System.out.println("Inside testLoginPage()");    
-        assertTitleEquals("Welcome to Continous Integration with Jenkins in AWS Yottabyte session");
+        assertTitleEquals("Welcome to Continous Integration with Jenkins in AWS Yottabyte session" messageUtil.printMessage());
     }
 }
