@@ -2,7 +2,6 @@ package artifactory.test;
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
 import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
