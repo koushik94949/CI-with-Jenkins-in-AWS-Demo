@@ -2,6 +2,7 @@ package artifactory.test;
 
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
 import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
@@ -23,7 +24,8 @@ public class WebTest {
     @Test
     public void testLoginPage() {
         beginAt("index.html");
-        System.out.println("Inside testLoginPage()");    
-        assertTitleEquals("Welcome to Continous Integration with Jenkins in AWS Yottabyte session" messageUtil.printMessage());
+        System.out.println("Verified the Tittle");    
+        assertTitleEquals("Welcome to Continous Integration with Jenkins in AWS Yottabyte session");
+        assertEquals("Hello DevOps Engineers and Architects!");
     }
 }
