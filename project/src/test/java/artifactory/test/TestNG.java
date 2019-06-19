@@ -45,3 +45,6 @@ public class TestNG  {
         //Close the browser
         driver.quit();
     }
+                                                                                          
+}                                             
+                                        
