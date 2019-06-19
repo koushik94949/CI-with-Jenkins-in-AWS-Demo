@@ -32,18 +32,7 @@ public class AppTest
         return new TestSuite( AppTest.class );
     }
     
-    @Before
-    public void prepare() {
-        setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
-        setBaseUrl("http://35.200.147.21:31000/project-1.0-RAMA/");
-    }
- 
-    @Test
-    public void testLoginPage() {
-        beginAt("index.html"); 
-        assertTitleEquals("Hello DevOps Engineers and Architects!");
-    }
-
+    
     /**
      * Rigourous Test :-)
      */
