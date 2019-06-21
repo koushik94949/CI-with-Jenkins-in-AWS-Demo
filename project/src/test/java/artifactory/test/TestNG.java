@@ -21,10 +21,10 @@ public class TestNG  {
 
         // Find the text input element by its name
         WebElement element = driver.findElement(By.name("q"));
-        @test
+        
         // Enter something to search for
         element.sendKeys("Cheese!");
-        @test
+        
         // Now submit the form. WebDriver will find the form for us from the element
         element.submit();
         @test
