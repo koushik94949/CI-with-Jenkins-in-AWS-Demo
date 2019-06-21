@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" ?xml>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sute SYSTEM "http://testng.org/tesng-1.0.dtd">
 <sute name="Suite">
   <test thread-count="5" name="Test">
      <classes>
-	   <class name="TestNG.TestNG"/>
+	   <class name="project.TestNG"/>
 	  </classes>
    </test>
 </suite>   
