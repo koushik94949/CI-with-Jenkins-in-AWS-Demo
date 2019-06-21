@@ -27,7 +27,7 @@ public class TestNG  {
         
         // Now submit the form. WebDriver will find the form for us from the element
         element.submit();
-        @test
+        
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
         
