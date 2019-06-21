@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Testng">
      <classes>
-	   <class name="artifactory.test.TestNG"/>
+	   <class name="artifactory.test.WebTest"/>
 	  </classes>
    </test>
 </suite>   
