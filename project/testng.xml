@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?xml>
 <!DOCTYPE sute SYSTEM "http://testng.org/tesng-1.0.dtd">
 <sute name="Suite">
   <test thread-count="5" name="Test">
