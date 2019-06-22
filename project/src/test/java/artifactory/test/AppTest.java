@@ -40,4 +40,19 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+    public class WebTest {
+    @Before
+    public void prepare() {
+        setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
+        setBaseUrl("http://35.200.147.21:31000/project-1.0-RAMA/");
+    }
+ 
+    @Test
+    public void testLoginPage() {
+        beginAt("index.html");
+        System.out.println("Verified the Tittle and Url");    
+        assertTitleEquals("Welcome to Continous Integration with Jenkins in AWS Yottabyte session");
+    }
+  }
 }
