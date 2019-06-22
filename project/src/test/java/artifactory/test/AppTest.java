@@ -41,7 +41,6 @@ public class AppTest
         assertTrue( true );
     }
     
-    public class WebTest {
     @Before
     public void prepare() {
         setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
@@ -54,5 +53,5 @@ public class AppTest
         System.out.println("Verified the Tittle and Url");    
         assertTitleEquals("Welcome to Continous Integration with Jenkins in AWS Yottabyte session");
     }
-  }
+  
 }
