@@ -18,7 +18,7 @@ public class SeleniumTest {
 		
 	}
 
-	@Test
+	
 	public void isPageTitleCorrect() throws InterruptedException {
 		driver = new FirefoxDriver();
 		driver.get("https://www.google.com/xhtml");
