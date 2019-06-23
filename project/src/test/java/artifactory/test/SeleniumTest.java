@@ -21,7 +21,10 @@ public class SeleniumTest {
 	public void isPageTitleCorrect() throws InterruptedException {
 		
 		driver = new ChromeDriver();
-		opts.set_headless(True);
+		chrome_options = Options();
+		chrome_options.add_argument('--headless');
+		chrome_options.add_argument('--no-sandbox');
+		chrome_options.add_argument('--disable-dev-shm-usage');
 		driver.get("https://www.google.com/xhtml");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
