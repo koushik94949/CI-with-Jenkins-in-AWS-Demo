@@ -37,7 +37,7 @@ public class FirstTest {
         System.out.println("Page Title: " + title);
  
         //Assertion
-        Assert.assertEquals(title, "Software Test Academy", "Title assertion is failed!");
+        Assert.assertEquals(title, "Welcome to Continous Integration with Jenkins in AWS Yottabyte session", "Title assertion is failed!");
     }
  
     //-----------------------------------Test TearDown-----------------------------------
