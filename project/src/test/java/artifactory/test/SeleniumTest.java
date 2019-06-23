@@ -20,7 +20,6 @@ public class SeleniumTest {
 
 	@Test
 	public void isPageTitleCorrect() throws InterruptedException {
-		
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/xhtml");
 		driver.manage().window().maximize();
