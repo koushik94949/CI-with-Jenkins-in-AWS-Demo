@@ -14,13 +14,13 @@ public class SeleniumTest {
 	private static WebDriver driver;
 
 	public SeleniumTest() {
-		System.setProperty("webdriver.firefox.driver", "/usr/bin/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
 		
 	}
 
 	@Test
 	public void isPageTitleCorrect() throws InterruptedException {
-		driver = new GeckoDriver();
+		driver = new FirefoxDriver();
 		driver.get("https://www.google.com/xhtml");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
