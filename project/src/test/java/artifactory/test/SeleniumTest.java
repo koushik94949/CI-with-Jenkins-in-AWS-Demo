@@ -14,13 +14,14 @@ public class SeleniumTest {
 
 	public SeleniumTest() {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		opts.set_headless(True);
+		
 	}
 
 	@Test
 	public void isPageTitleCorrect() throws InterruptedException {
 		
 		driver = new ChromeDriver();
+		opts.set_headless(True);
 		driver.get("https://www.google.com/xhtml");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
