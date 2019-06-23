@@ -6,7 +6,7 @@ import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
