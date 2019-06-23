@@ -13,7 +13,7 @@ public class SeleniumTest {
 	private static WebDriver driver;
 
 	public SeleniumTest() {
-		System.setProperty("webdriver.chrome.driver", "./usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	}
 
 	@Test
