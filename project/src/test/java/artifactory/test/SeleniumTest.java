@@ -6,7 +6,7 @@ import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.GeckoDriver;
+import org.openqa.selenium.chrome.WebDriver;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -14,18 +14,18 @@ public class SeleniumTest {
 	private static WebDriver driver;
 
 	public SeleniumTest() {
-		System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		
 	}
 
 	
 	public void isPageTitleCorrect() throws InterruptedException {
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		driver.get("https://www.google.com/xhtml");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 		WebElement searchBox = driver.findElement(By.name("q"));
-		searchBox.sendKeys("GeckoDriver");
+		searchBox.sendKeys("ChromeDriver");
 		searchBox.submit();
 		Thread.sleep(5000); // Let the user actually see something!
 		driver.quit();
