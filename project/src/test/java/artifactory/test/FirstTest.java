@@ -7,12 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
  
-/*****************************************************************************
- * Author:      Onur Baskirt
- * Description: This is the first Selenium TestNG test.
- *              It opens swtestacademy homepage and prints and checks its title.
-*******************************************************************************/
- 
+
 public class FirstTest {
  
     //-----------------------------------Global Variables-----------------------------------
@@ -20,7 +15,7 @@ public class FirstTest {
     public WebDriver driver;
  
     //Declare a test URL variable
-    public String testURL = "http://www.swtestacademy.com/";
+    public String testURL = "http://35.200.147.21:31000/project-1.0-RAMA/";
  
     //-----------------------------------Test Setup-----------------------------------
     @BeforeMethod
@@ -28,7 +23,7 @@ public class FirstTest {
         //Create a new ChromeDriver
         driver = new ChromeDriver();
  
-        //Go to www.swtestacademy.com
+        //Go to http://35.200.147.21:31000/project-1.0-RAMA/
         driver.navigate().to(testURL);
     }
  
