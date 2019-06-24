@@ -28,7 +28,7 @@ public class FirstTest {
     }
  
     //-----------------------------------Tests-----------------------------------
-    //@Test
+    @Test
     public void firstTest () {
         //Get page title
         String title = driver.getTitle();
@@ -41,7 +41,7 @@ public class FirstTest {
     }
  
     //-----------------------------------Test TearDown-----------------------------------
-    //@AfterMethod
+    @AfterMethod
     public void teardownTest (){
         //Close browser and end the session
         driver.quit();
