@@ -2,11 +2,12 @@ package artifactory.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
- 
+
 
 public class FirstTest {
  
@@ -22,7 +23,9 @@ public class FirstTest {
     public void setupTest (){
         System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
         //Create a new ChromeDriver
-        driver = new ChromeDriver();
+        chromeOptions = new ChromeOptions();
+		      chromeOptions.addArguments("--headless","--no-sandbox","--disable-dev-shm-usage");
+        driver = new ChromeDriver(chromeOptions);
  
         //Go to http://35.200.147.21:31000/project-1.0-RAMA/
         driver.navigate().to(testURL);
