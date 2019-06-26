@@ -7,6 +7,15 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.junit.FixMethodOrder;
+import org.junit.Test;
+import org.junit.runners.MethodSorters;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import static org.junit.Assert.assertEquals;
 
 
 public class FirstTest {
@@ -14,7 +23,7 @@ public class FirstTest {
     //-----------------------------------Global Variables-----------------------------------
     //Declare a Webdriver variable
     public WebDriver driver;
- 
+     
     //Declare a test URL variable
     public String testURL = "http://35.200.147.21:31000/project-1.0-RAMA/";
  
@@ -22,6 +31,8 @@ public class FirstTest {
     @BeforeMethod
     public void setupTest (){
         System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+        chromeOptions = new ChromeOptions();
+		      chromeOptions.addArguments("--headless","--no-sandbox","--disable-dev-shm-usage");
         //Create a new ChromeDriver
          driver = new ChromeDriver();
          //Go to http://35.200.147.21:31000/project-1.0-RAMA/
