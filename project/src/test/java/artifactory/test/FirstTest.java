@@ -32,7 +32,7 @@ public class FirstTest {
     }
  
     //-----------------------------------Tests-----------------------------------
-    @Test
+    //@Test
     public void firstTest () {
         //Get page title
         String title = driver.getTitle();
