@@ -7,8 +7,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
  
+
 public class TecAdminSeleniumTest {
  
+        @Test
         public static void main(String[] args) throws IOException, InterruptedException {
                 System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
                 ChromeOptions chromeOptions = new ChromeOptions();
