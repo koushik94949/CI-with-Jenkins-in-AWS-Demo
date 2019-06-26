@@ -23,9 +23,7 @@ public class FirstTest {
     public void setupTest (){
         System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
         //Create a new ChromeDriver
-        ChromeOptions = new ChromeOptions();
-        ChromeOptions.addArguments("--headless","--no-sandbox","--disable-dev-shm-usage");
-        driver = new ChromeDriver(ChromeOptions);
+         driver = new ChromeDriver();
          //Go to http://35.200.147.21:31000/project-1.0-RAMA/
         driver.navigate().to(testURL);
     }
