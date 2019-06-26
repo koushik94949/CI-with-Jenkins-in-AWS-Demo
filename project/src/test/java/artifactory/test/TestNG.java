@@ -3,19 +3,24 @@ package artifactory.test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.testng.annotations.Test;
 
 public class TestNG  {
-
+        private static WebDriver driver;
+	    ChromeOptions chromeOptions;
+  
+    @Test
     public static void main(String[] args) {
         // Create a new instance of the Firefox driver
         // Notice that the remainder of the code relies on the interface, 
         // not the implementation.
-        System.setProperty("webdriver.gecko.driver", "/usr/bin/firefox");
-        WebDriver driver = new FirefoxDriver();
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+		chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless","--no-sandbox","--disable-dev-shm-usage");
+        driver = new ChromeDriver(chromeOptions);
         
         // And now use this to visit Google
         driver.get("http://www.google.com");
