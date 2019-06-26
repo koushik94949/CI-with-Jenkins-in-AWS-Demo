@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class TestNG  {
         private static WebDriver driver;
-	    ChromeOptions chromeOptions;
+	ChromeOptions chromeOptions;
   
     @Test
     public static void main(String[] args) {
